@@ -340,6 +340,26 @@
     }
     footer a { color: var(--text-muted); }
 
+    .cta-btn{
+    display:inline-block;
+    background:linear-gradient(90deg,#00d4ff,#00a8cc);
+    color:#000;
+    font-family:var(--font-display);
+    font-size:1rem;
+    font-weight:800;
+    padding:14px 34px;
+    border-radius:8px;
+    text-decoration:none;
+    transition:.25s ease;
+    box-shadow:0 4px 18px rgba(0,212,255,.35);
+}
+
+.cta-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 24px rgba(0,212,255,.45);
+    text-decoration:none;
+}
+
     /* ── Responsive ── */
     @media (max-width: 640px) {
       .header-inner { justify-content: center; }
@@ -431,14 +451,30 @@
       ============================================================ -->
       <section id="how-cheats-work" aria-labelledby="s2-heading">
         <h2 id="s2-heading">How Cheat Codes Work in <span class="accent">PS2 Emulation</span></h2>
-
+      
         <p>
           On original PS2 hardware, cheats were delivered through devices like the Action Replay or GameShark, which intercepted memory read/write operations during gameplay. On AetherSX2, the same principle applies — but instead of a physical cartridge, cheats are delivered through <strong>PNACH files</strong> loaded by the emulator itself.
         </p>
-
+      
         <p>
           Each PS2 game has a unique identifier called a <strong>CRC code</strong> (cyclic redundancy check). The emulator uses this code to match your game disc to the correct patch file. Once a valid PNACH file is detected at startup, the emulator applies those memory patches before the game even reaches the title screen.
         </p>
+      
+        <div style="margin:30px 0;text-align:center;">
+          <a
+            href="https://aethersx2-apk.com/aethersx2-patch-codes/"
+            class="cta-btn"
+            rel="dofollow"
+            title="Download AetherSX2 Patch Codes"
+          >
+            Download AetherSX2 Patch Codes →
+          </a>
+        </div>
+      
+        <h3>Types of Codes AetherSX2 Supports</h3>
+      
+        <!-- Rest of the section continues... -->
+      </section>
 
         <h3>Types of Codes AetherSX2 Supports</h3>
 
